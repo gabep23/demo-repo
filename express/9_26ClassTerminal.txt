@@ -1,0 +1,291 @@
+Last login: Thu Sep 26 02:00:34 on console
+gabe@sfs-wifi-dhcp-10-143-137-111 ~ % node -v
+zsh: command not found: node
+gabe@sfs-wifi-dhcp-10-143-137-111 ~ % cd Documents
+gabe@sfs-wifi-dhcp-10-143-137-111 Documents % ls
+CSC317_Project1			Zoom
+My Movie.mp4			demo-repo
+Transcript.pdf			project-1-travler-site-gabep23
+gabe@sfs-wifi-dhcp-10-143-137-111 Documents % cd demo-repo
+gabe@sfs-wifi-dhcp-10-143-137-111 demo-repo % git pull
+remote: Enumerating objects: 34, done.
+remote: Counting objects: 100% (34/34), done.
+remote: Compressing objects: 100% (23/23), done.
+remote: Total 33 (delta 6), reused 30 (delta 3), pack-reused 0 (from 0)
+Unpacking objects: 100% (33/33), 4.06 KiB | 148.00 KiB/s, done.
+From https://github.com/kapi-codes/demo-repo
+   27dce8a..83df3a4  main       -> origin/main
+Updating 27dce8a..83df3a4
+Fast-forward
+ README.md                         |  0
+ dom/menu/starter/dom.js           |  0
+ dom/menu/starter/index.html       | 40 +++++++++++++++++++++
+ dom/menu/starter/styles.css       | 50 ++++++++++++++++++++++++++
+ dom/playground/starter/dom.js     |  0
+ dom/playground/starter/index.html | 24 +++++++++++++
+ dom/playground/starter/styles.css | 32 +++++++++++++++++
+ express/server.js                 | 16 +++++++++
+ js/starter/callbacks.js           |  6 ++++
+ js/starter/data.js                | 74 +++++++++++++++++++++++++++++++++++++++
+ js/starter/hello.js               | 12 +++++++
+ js/starter/index.html             | 12 +++++++
+ js/starter/map.js                 | 11 ++++++
+ 13 files changed, 277 insertions(+)
+ create mode 100644 README.md
+ create mode 100644 dom/menu/starter/dom.js
+ create mode 100644 dom/menu/starter/index.html
+ create mode 100644 dom/menu/starter/styles.css
+ create mode 100644 dom/playground/starter/dom.js
+ create mode 100644 dom/playground/starter/index.html
+ create mode 100644 dom/playground/starter/styles.css
+ create mode 100644 express/server.js
+ create mode 100644 js/starter/callbacks.js
+ create mode 100644 js/starter/data.js
+ create mode 100644 js/starter/hello.js
+ create mode 100644 js/starter/index.html
+ create mode 100644 js/starter/map.js
+gabe@sfs-wifi-dhcp-10-143-137-111 demo-repo % code .
+gabe@sfs-wifi-dhcp-10-143-137-111 demo-repo % node -v
+v20.17.0
+gabe@sfs-wifi-dhcp-10-143-137-111 demo-repo % cd express
+gabe@sfs-wifi-dhcp-10-143-137-111 express % ls
+server.js
+gabe@sfs-wifi-dhcp-10-143-137-111 express % npm init -y
+Wrote to /Users/gabe/Documents/demo-repo/express/package.json:
+
+{
+  "name": "express",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
+
+
+
+gabe@sfs-wifi-dhcp-10-143-137-111 express % ls
+package.json	server.js
+gabe@sfs-wifi-dhcp-10-143-137-111 express % code .
+gabe@sfs-wifi-dhcp-10-143-137-111 express % npm start
+
+> express@1.0.0 start
+> node server.js
+
+(node:1447) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.
+(Use `node --trace-warnings ...` to show where the warning was created)
+/Users/gabe/Documents/demo-repo/express/server.js:1
+import express from 'express';
+^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+    at wrapSafe (node:internal/modules/cjs/loader:1378:20)
+    at Module._compile (node:internal/modules/cjs/loader:1428:41)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)
+    at node:internal/main/run_main_module:28:49
+
+Node.js v20.17.0
+gabe@sfs-wifi-dhcp-10-143-137-111 express % npm start
+
+> express@1.0.0 start
+> node server.js
+
+(node:1463) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.
+(Use `node --trace-warnings ...` to show where the warning was created)
+/Users/gabe/Documents/demo-repo/express/server.js:1
+import express from 'express';
+^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+    at wrapSafe (node:internal/modules/cjs/loader:1378:20)
+    at Module._compile (node:internal/modules/cjs/loader:1428:41)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)
+    at node:internal/main/run_main_module:28:49
+
+Node.js v20.17.0
+gabe@sfs-wifi-dhcp-10-143-137-111 express % npm install express
+
+added 65 packages, and audited 66 packages in 3s
+
+13 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+gabe@sfs-wifi-dhcp-10-143-137-111 express % npm start
+
+> express@1.0.0 start
+> node server.js
+
+(node:1678) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.
+(Use `node --trace-warnings ...` to show where the warning was created)
+/Users/gabe/Documents/demo-repo/express/server.js:1
+import express from 'express';
+^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+    at wrapSafe (node:internal/modules/cjs/loader:1378:20)
+    at Module._compile (node:internal/modules/cjs/loader:1428:41)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)
+    at node:internal/main/run_main_module:28:49
+
+Node.js v20.17.0
+gabe@sfs-wifi-dhcp-10-143-137-111 express % npm start
+
+> express@1.0.0 start
+> node server.js
+
+Server is running on http://localhost:3000
+^C
+gabe@sfs-wifi-dhcp-10-143-137-111 express % npm start
+
+> express@1.0.0 start
+> node server.js
+
+Server is running on http://localhost:3000
+npm start
+TypeError: resp.send is not a function
+    at file:///Users/gabe/Documents/demo-repo/express/server.js:14:10
+    at Layer.handle [as handle_request] (/Users/gabe/Documents/demo-repo/express/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/gabe/Documents/demo-repo/express/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/gabe/Documents/demo-repo/express/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/gabe/Documents/demo-repo/express/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/gabe/Documents/demo-repo/express/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/gabe/Documents/demo-repo/express/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/gabe/Documents/demo-repo/express/node_modules/express/lib/router/index.js:280:10)
+    at SendStream.error (/Users/gabe/Documents/demo-repo/express/node_modules/serve-static/index.js:121:7)
+    at SendStream.emit (node:events:519:28)
+^C
+gabe@sfs-wifi-dhcp-10-143-137-111 express % npm start
+
+> express@1.0.0 start
+> node server.js
+
+Server is running on http://localhost:3000
+Error: ENOENT: no such file or directory, stat '/Users/gabe/Documents/demo-repo/express/public/index.html'
+^C
+gabe@sfs-wifi-dhcp-10-143-137-111 express % npm start
+
+> express@1.0.0 start
+> node server.js
+
+Server is running on http://localhost:3000
+Error: ENOENT: no such file or directory, stat '/Users/gabe/Documents/demo-repo/express/public/index.html'
+Error: ENOENT: no such file or directory, stat '/Users/gabe/Documents/demo-repo/express/public/index.html'
+Error: ENOENT: no such file or directory, stat '/Users/gabe/Documents/demo-repo/express/public/index.html'
+^C
+gabe@sfs-wifi-dhcp-10-143-137-111 express % npm start
+
+> express@1.0.0 start
+> node server.js
+
+Server is running on http://localhost:3000
+Error: ENOENT: no such file or directory, stat '/Users/gabe/Documents/demo-repo/express/public/index.html'
+^C
+gabe@sfs-wifi-dhcp-10-143-137-111 express % npm start
+
+> express@1.0.0 start
+> node server.js
+
+Server is running on http://localhost:3000
+Error: ENOENT: no such file or directory, stat '/Users/gabe/Documents/demo-repo/express/public/index.html'
+Error: ENOENT: no such file or directory, stat '/Users/gabe/Documents/demo-repo/express/public/index.html'
+^C
+gabe@sfs-wifi-dhcp-10-143-137-111 express % npm start
+
+> express@1.0.0 start
+> node server.js
+
+Server is running on http://localhost:3000
+^C
+gabe@sfs-wifi-dhcp-10-143-137-111 express % npm start
+
+> express@1.0.0 start
+> node server.js
+
+node:internal/modules/run_main:129
+    triggerUncaughtException(
+    ^
+
+Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/Users/gabe/Documents/demo-repo/express/cars' imported from /Users/gabe/Documents/demo-repo/express/server.js
+Did you mean to import "./cars.js"?
+    at finalizeResolution (node:internal/modules/esm/resolve:265:11)
+    at moduleResolve (node:internal/modules/esm/resolve:933:10)
+    at defaultResolve (node:internal/modules/esm/resolve:1169:11)
+    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:540:12)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:509:25)
+    at ModuleLoader.getModuleJob (node:internal/modules/esm/loader:239:38)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/module_job:96:40)
+    at link (node:internal/modules/esm/module_job:95:36) {
+  code: 'ERR_MODULE_NOT_FOUND',
+  url: 'file:///Users/gabe/Documents/demo-repo/express/cars'
+}
+
+Node.js v20.17.0
+gabe@sfs-wifi-dhcp-10-143-137-111 express % 
+gabe@sfs-wifi-dhcp-10-143-137-111 express % 
+gabe@sfs-wifi-dhcp-10-143-137-111 express % npm start
+
+> express@1.0.0 start
+> node server.js
+
+node:internal/modules/run_main:129
+    triggerUncaughtException(
+    ^
+
+Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/Users/gabe/Documents/demo-repo/express/data/cars' imported from /Users/gabe/Documents/demo-repo/express/server.js
+Did you mean to import "./data/cars.js"?
+    at finalizeResolution (node:internal/modules/esm/resolve:265:11)
+    at moduleResolve (node:internal/modules/esm/resolve:933:10)
+    at defaultResolve (node:internal/modules/esm/resolve:1169:11)
+    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:540:12)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:509:25)
+    at ModuleLoader.getModuleJob (node:internal/modules/esm/loader:239:38)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/module_job:96:40)
+    at link (node:internal/modules/esm/module_job:95:36) {
+  code: 'ERR_MODULE_NOT_FOUND',
+  url: 'file:///Users/gabe/Documents/demo-repo/express/data/cars'
+}
+
+Node.js v20.17.0
+gabe@sfs-wifi-dhcp-10-143-137-111 express % script 9/26ClassTerminal.txt
+script: 9/26ClassTerminal.txt: No such file or directory
+gabe@sfs-wifi-dhcp-10-143-137-111 express % 
+gabe@sfs-wifi-dhcp-10-143-137-111 express % 
+gabe@sfs-wifi-dhcp-10-143-137-111 express % 
+gabe@sfs-wifi-dhcp-10-143-137-111 express % 
+gabe@sfs-wifi-dhcp-10-143-137-111 express % 
+gabe@sfs-wifi-dhcp-10-143-137-111 express % 
+gabe@sfs-wifi-dhcp-10-143-137-111 express % 
+gabe@sfs-wifi-dhcp-10-143-137-111 express % 
+gabe@sfs-wifi-dhcp-10-143-137-111 express % 
+gabe@sfs-wifi-dhcp-10-143-137-111 express % script 9_26ClassTerminal.txt
+Script started, output file is 9_26ClassTerminal.txt
+gabe@sfs-wifi-dhcp-10-143-137-111 express % pwd
+/Users/gabe/Documents/demo-repo/express
+gabe@sfs-wifi-dhcp-10-143-137-111 express % ls
+9_26ClassTerminal.txt	package-lock.json	server.js
+data			package.json
+node_modules		public
+gabe@sfs-wifi-dhcp-10-143-137-111 express % history > 9_26ClassTerminal.txt
+gabe@sfs-wifi-dhcp-10-143-137-111 express % ls 
+9_26ClassTerminal.txt	package-lock.json	server.js
+data			package.json
+node_modules		public
+gabe@sfs-wifi-dhcp-10-143-137-111 express % cd 9_26ClassTerminal.txt
+cd: not a directory: 9_26ClassTerminal.txt
+gabe@sfs-wifi-dhcp-10-143-137-111 express % code .
+gabe@sfs-wifi-dhcp-10-143-137-111 express % 
